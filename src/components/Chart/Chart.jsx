@@ -33,6 +33,8 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                             fill: true
                         }]
                     }}
+                    width="85%"
+                    height= "70%"
                 />
             ) : null
     )
