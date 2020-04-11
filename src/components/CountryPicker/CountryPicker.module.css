@@ -1,10 +1,5 @@
 .formCOntrol {
     width: 30%;
-    float: right;
-    color: white;
-    background-color: thistle;
-}
-
-.option {
-    color: white;
+    margin-bottom: 30px !important;
+    margin-top: 10% !important;
 }

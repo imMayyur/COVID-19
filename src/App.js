@@ -5,7 +5,8 @@ import styles from './App.module.css'
 import { fetchData } from './api'
 
 import coronaImage from './images/image.png'
-import { Toolbar, AppBar, Typography } from '@material-ui/core';
+import { Toolbar, AppBar, IconButton, Typography, Button, MenuItem, FormControlLabel } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 
@@ -38,13 +39,11 @@ class App extends Component{
       <Fragment>
       <AppBar position="sticky">
         <Toolbar>
-          <Typography variant="h6">
-            <img className={styles.image} alt="COVID-19" src={coronaImage} />
-          </Typography>
-          <CountryPicker handleCountryChange={this.handleCountryChange} />
+          <img className={styles.image} alt="COVID-19" src={coronaImage} />
         </Toolbar>
       </AppBar>
         <div className={styles.container}>
+          <CountryPicker handleCountryChange={this.handleCountryChange} />
           <Cards data={data} />
           <Chart data={data} country={country}/>
         </div>
